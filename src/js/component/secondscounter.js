@@ -9,16 +9,17 @@ const SecondsCounter = (props) => {
  
  
     return (
-    <div className="row">
-      <p> Han Pasado {props.segundos} segundos</p>
-     <div className="col-2"> 
-     <i class="fa-solid fa-clock"></i>
+    <div className="row justify-content-center mt-5">
+
+     <div className="col-1 m-1"> 
+ 
+     <i class="fas fa-stopwatch "></i>
      </div>
-     <div className="col-2">{diezmil}</div>
-     <div className="col-2">{mil}</div>
-     <div className="col-2">{centena}</div>
-     <div className="col-2">{decena}</div>
-     <div className="col-2">{unidad}</div>
+     <div className="col-1 m-1 my-auto">{diezmil}</div>
+     <div className="col-1 m-1">{mil}</div>
+     <div className="col-1 m-1">{centena}</div>
+     <div className="col-1 m-1">{decena}</div>
+     <div className="col-1 m-1">{unidad}</div>
      
 
   

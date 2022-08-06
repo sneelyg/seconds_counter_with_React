@@ -6,7 +6,7 @@ import SecondsCounter from "./secondscounter.js";
 
 //create your first component
 
-var seconds = 3424;
+var seconds = 0;
 
 setInterval( ()=>{seconds++}, 1000);
 
@@ -21,11 +21,11 @@ const Home = () => {
 				
 				<SecondsCounter segundos={seconds}></SecondsCounter>
 				<i class="fa-solid fa-watch"></i>
-				<p>		
+				<p className="footing">		
 			
 				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
+				sNeelyg
+				with a whole lotta love!
 			</p>
 		</div>
 	);
