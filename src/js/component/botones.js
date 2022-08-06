@@ -1,4 +1,5 @@
 import React from "react";
+import Reset_seconds from "./home.jsx";
 
 const Botones = () => {
   return (
@@ -10,11 +11,11 @@ const Botones = () => {
         <div className="col-2 mx-2" id="start_btn">
           Start
         </div>
-        <div className="col-2 mx-2" id="stop_btn" onClick={()=>seconds=0}>
+        <div className="col-2 mx-2" id="stop_btn" onClick={()=>Reset_seconds()}>
           Reset
         </div>
         <div className="col-2 mx-2" id="stop_btn">
-          <button onClick={()=>seconds=0}>ClickMe</button>
+          <button onClick={()=>Reset_seconds()}>ClickMe</button>
         </div>
       </div>
     </div>
