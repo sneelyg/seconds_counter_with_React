@@ -14,9 +14,7 @@ const Botones = () => {
         <div className="col-2 mx-2" id="stop_btn" onClick={()=>Reset_seconds()}>
           Reset
         </div>
-        <div className="col-2 mx-2" id="stop_btn">
-          <button onClick={()=>Reset_seconds()}>ClickMe</button>
-        </div>
+        
       </div>
     </div>
   );

@@ -10,31 +10,35 @@ import Botones from "./botones.js";
 var seconds = 0;
 var Contador1 = setInterval(()=>seconds++, 1000);
 
-var Contador=() => setInterval(()=>seconds++, 1000);
+
+
 
 const Home = () => {
   return (
     <div className="text-center">
       <h2 id="titulo">EVERY SECOND COUNTS</h2>
+      
+      <SecondsCounter segundos={seconds}></SecondsCounter>
+
       <div className="col-2 mx-2" id="stop_btn" onClick={() => Reset_seconds()}>
         Reset
       </div>
       <div
         className="col-2 mx-2"
         id="stop_btn"
-        onClick={() => clearInterval(Contador1)}
+        onClick={() => clearInterval(Contador1)       }
       >
         Stop
       </div>
       <div
         className="col-2 mx-2"
         id="stop_btn"
-        onClick={() =>Contador()}
+        onClick={() => Contador1 = setInterval(()=>seconds++, 1000)}
       >
         Start
       </div>
-      <SecondsCounter segundos={seconds}></SecondsCounter>
-      <Botones />
+
+     
 
       <p className="footing">Made by @sNeelyg with a whole lotta patience!</p>
     </div>
